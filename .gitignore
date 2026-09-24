@@ -1,0 +1,52 @@
+# ==========================================
+# Pastas de Compilação do .NET e MAUI
+# ==========================================
+[Bb]in/
+[Oo]bj/
+
+# ==========================================
+# Arquivos Locais e de Cache do Visual Studio
+# ==========================================
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+*.vspscc
+*.vssscc
+
+# ==========================================
+# Arquivos do Sistema Operacional
+# ==========================================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# ==========================================
+# Configurações Locais e Variáveis de Ambiente
+# ==========================================
+appsettings.Development.json
+appsettings.local.json
+.env
+
+# ==========================================
+# Pacotes Nuget e Crash Reports
+# ==========================================
+*.nupkg
+packages/
+TestResults/
+*.log
+
+# ==========================================
+# Pacotes de Distribuição (Mobile/Desktop)
+# ==========================================
+*.apk
+*.aab
+*.ipa
+*.xcarchive
+AppPackages/
+BundleArtifacts/
