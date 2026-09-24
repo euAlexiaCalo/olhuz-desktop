@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="olhuz_desktop.Navigation.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:home="clr-namespace:olhuz_desktop.Features.Home.Views"
+    xmlns:reading="clr-namespace:olhuz_desktop.Features.Reading.Views"
+    xmlns:preferences="clr-namespace:olhuz_desktop.Features.Preferences.Views"
+    xmlns:profile="clr-namespace:olhuz_desktop.Features.Profile.Views"
+    FlyoutBehavior="Locked">
+
+    <!-- Cabeçalho do Menu Lateral -->
+    <Shell.FlyoutHeader>
+        <Grid HeightRequest="150" Padding="20">
+            <Image Source="logo.png" Aspect="AspectFit" />
+        </Grid>
+    </Shell.FlyoutHeader>
+
+    <!-- Itens do Menu -->
+    <FlyoutItem Title="Início" Icon="home_icon.png">
+        <ShellContent Route="HomePage" ContentTemplate="{DataTemplate home:HomePage}" />
+    </FlyoutItem>
+
+    <FlyoutItem Title="Leituras" Icon="reading_icon.png">
+        <ShellContent Route="ReadingHistoryPage" ContentTemplate="{DataTemplate reading:ReadingHistoryPage}" />
+    </FlyoutItem>
+
+    <FlyoutItem Title="Configurações" Icon="settings_icon.png">
+        <ShellContent Route="PreferencesPage" ContentTemplate="{DataTemplate preferences:PreferencesPage}" />
+    </FlyoutItem>
+
+    <FlyoutItem Title="Perfil" Icon="profile_icon.png">
+        <ShellContent Route="ProfilePage" ContentTemplate="{DataTemplate profile:ProfilePage}" />
+    </FlyoutItem>
+
+    <!-- Rodapé do Menu -->
+    <Shell.FlyoutFooter>
+        <Grid Padding="20">
+            <Button Text="Sair" BackgroundColor="Transparent" TextColor="#D32F2F" HorizontalOptions="Start" />
+        </Grid>
+    </Shell.FlyoutFooter>
+
+</Shell>
